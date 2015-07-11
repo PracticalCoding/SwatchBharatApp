@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ParseStarterProjectActivity!</string>
+    <string name="app_name">Swatch Hubli</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="send">Send</string>
+</resources>

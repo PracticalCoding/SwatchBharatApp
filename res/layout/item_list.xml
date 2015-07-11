@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/item_share"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_date"
+        android:layout_alignBottom="@+id/item_date"
+        android:layout_alignParentRight="true"
+      
+        android:text="Share" />
+
+    <Button
+        android:id="@+id/item_picture"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/item_share"
+        android:layout_below="@+id/item_msg"
+        android:layout_marginTop="52dp"
+        
+        android:text="Picture" />
+
+    <TextView
+        android:id="@+id/item_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/item_share"
+        android:layout_marginTop="17dp"
+        android:autoLink="all"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/item_map"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_picture"
+        android:layout_alignBottom="@+id/item_picture"
+        android:layout_alignParentLeft="true"
+        
+        android:text="Show location" />
+   <!--  android:onClick="maps" 
+     android:onClick="share"
+     android:onClick="buttonclick"-->
+
+</RelativeLayout>

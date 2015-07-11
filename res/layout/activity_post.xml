@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".DummyActivity" >
+
+     <EditText
+         android:id="@+id/txtLocation"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/img"
+         android:layout_centerHorizontal="true"
+         android:layout_margin="10dp"
+         android:ems="10"
+         android:hint="Enter landmark" >
+
+         <requestFocus />
+     </EditText>
+
+     <EditText
+         android:id="@+id/txtMessage"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/txtLocation"
+         android:layout_below="@+id/txtLocation"
+         android:layout_marginTop="22dp"
+         android:lines="3"
+         android:ems="10"
+         android:hint="Enter Message" />
+
+     <Button
+         android:id="@+id/btnSend"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/txtMessage"
+         android:layout_centerHorizontal="true"
+         android:layout_margin="10dp"
+         android:gravity="center"
+         android:text="@string/send" />
+
+     <Button
+         android:id="@+id/bn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_margin="10dp"
+         android:text="@string/capture_image" />
+
+     <ImageView
+         android:id="@+id/img"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_marginLeft="5dp"
+         android:layout_alignParentTop="true"
+         android:layout_toRightOf="@+id/bn"
+         android:visibility="invisible"
+         android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>
